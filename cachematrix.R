@@ -4,16 +4,13 @@
 ## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
-
 	## Create a matrix
-
 	## Cache mem
 	mem <- NULL
 	set <- function(y) {
 		x <<- y ## assign input to parent environment
 		mem <<- NULL ## initialize mem in parent environment to null
 		}
-
 	get <- function() x ## retrun matrix x
 
 	setinv <- function(inv) mem <<- inv ## set cache to inverse of mem matrix
